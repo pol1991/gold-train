@@ -7,6 +7,20 @@
 */
 
 
+if(!defined('GOLD_TRAIN_DIR_PATH')){
+
+    define('GOLD_TRAIN_DIR_PATH', untrailingslashit( get_template_directory()));
+};
+
+require_once GOLD_TRAIN_DIR_PATH . '/inc/helpers/autoloader.php';
+
+
+function gold_train_get_theme_instance(){
+    \GOLD_TRAIN_THEME\Inc\GOLD_TRAIN_THEME::get_instance();
+}
+
+gold_train_get_theme_instance();
+
 function gold_train_enqueue_scripts() {
 
     /** Register Styles */
