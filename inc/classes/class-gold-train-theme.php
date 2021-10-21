@@ -16,6 +16,8 @@ class GOLD_TRAIN_THEME {
 
         //load classes
         Assets::get_instance(); // initiate instance of class Assets
+        Menus::get_instance();
+        
         $this->setup_hooks();
     }
 
@@ -28,6 +30,11 @@ class GOLD_TRAIN_THEME {
     }
 
     public function setup_theme(){
+
+        global $content_width;
+        if(!isset($content_width)){
+            $content_width= 1240;
+        }
 
         $logo_defaults = array(
             'height'               => 100,
@@ -49,7 +56,17 @@ class GOLD_TRAIN_THEME {
         add_theme_support('title-tag');
         add_theme_support('custom-background',$background_defaults);
         add_theme_support('custom-logo',$logo_defaults);
+        add_theme_support('post-thumbnails');
+        add_theme_support('customize-selective-theme-widgets');
+        add_theme_support('automatic-feed-links');
+        add_theme_support( 'html5', ['comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ] );
+        //gutenberg
+        add_theme_support('wp-block-style');
+        add_theme_support('align-wide');
+        //additional css
+        add_editor_style();
 
+    
 
     }
 
