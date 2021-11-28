@@ -26,6 +26,11 @@ if( function_exists('wp_body_open') ){
 <header id="master-header" class="site-header" role="banner">
     <?php get_template_part('template-parts/header/nav'); ?>
 </header>
+<?php if ( is_active_sidebar( 'header_widgets_1' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'header_widgets_1' ); ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
 <div id="content" class="site-content">
 
 </div>

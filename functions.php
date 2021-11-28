@@ -27,4 +27,3 @@ gold_train_get_theme_instance();
 
 
 
-?>

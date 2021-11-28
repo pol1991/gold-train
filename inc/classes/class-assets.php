@@ -43,12 +43,14 @@ class Assets{
     public function register_scripts() {
         /** Register Scripts */
         wp_register_script('main', GOLD_TRAIN_DIR_URI.'/assets/js/main.js', [], filemtime( GOLD_TRAIN_DIR_PATH.'/assets/js/main.js' ),true );
-        wp_register_script('bootstrap', GOLD_TRAIN_DIR_URI.'/assets/src/bootstrap/js/bootstrap.js', ['jquery'] , false, true);
+        wp_register_script('bootstrap', GOLD_TRAIN_DIR_URI.'/assets/src/bootstrap/js/bootstrap.js', ['jquery'] , false, false);
+        wp_register_script('bootstrap-min', GOLD_TRAIN_DIR_URI.'/assets/src/bootstrap/js/bootstrap.min.js', ['jquery'] , false, false);
     
     
         /** Enqueue Scripts */
                wp_enqueue_script('main');
         wp_enqueue_script('bootstrap');
+        wp_enqueue_script('bootstrap-min');
 
 }
 
