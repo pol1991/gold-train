@@ -9,7 +9,17 @@ $menu_class= \GOLD_TRAIN_THEME\Inc\Menus::get_instance();
 $header_menu_id = $menu_class->get_menu_id('gold-train-header-menu');
 $header_menus = wp_get_nav_menu_items($header_menu_id);
 ?>
-
+<div class="w-100 bg-light">
+  <div class="container">
+    <a class="gt-inline-link" ><?php printf( get_theme_mod('gold_train_brand_name', __( 'Lorem Ipsum', 'gold-train' ) ),); ?></a>
+    <a class="gt-inline-link" href="tel:<?php printf( get_theme_mod('gold_train_phone_number', __( '+48500500500', 'gold-train' ) ),); ?>">
+    <?php printf( get_theme_mod('gold_train_phone_number', __( '+48500500500', 'gold-train' ) ),); ?>
+    </a>
+    <a class="gt-inline-link" href="mailto:<?php printf( get_theme_mod('gold_train_email_address', __( 'email@twojafirma.pl', 'gold-train' ) ),); ?>">
+    <?php printf( get_theme_mod('gold_train_email_address', __( 'email@twojafirma.pl', 'gold-train' ) ),); ?>
+    </a>
+  </div>
+</div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <?php

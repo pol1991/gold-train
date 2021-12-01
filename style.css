@@ -16,6 +16,18 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+/* Native Theme Styles */
+
+.gt-inline-link{
+	margin: 0px 16px;
+	color:inherit;
+	text-decoration: none;
+
+}
+
+.gt-container{
+	margin: 0;
+}
 
 .footer-container{
     position: fixed;

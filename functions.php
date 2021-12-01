@@ -17,7 +17,7 @@ if(!defined('GOLD_TRAIN_DIR_URI')){
 }
 
 require_once GOLD_TRAIN_DIR_PATH . '/inc/helpers/autoloader.php';
-
+require_once ( GOLD_TRAIN_DIR_PATH . '/inc/customize/customize.php' );
 
 function gold_train_get_theme_instance(){
     \GOLD_TRAIN_THEME\Inc\GOLD_TRAIN_THEME::get_instance();

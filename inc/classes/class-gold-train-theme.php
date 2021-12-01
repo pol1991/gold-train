@@ -7,7 +7,6 @@
 
  
 namespace GOLD_TRAIN_THEME\Inc;
-
 use  GOLD_TRAIN_THEME\Inc\Traits\Singleton;
 
 
@@ -78,27 +77,27 @@ class GOLD_TRAIN_THEME {
         add_theme_support('dark-editor-style');
         add_theme_support('editor-color-palette', [
             [
-                'name' => __('Main gt profile color', 'txtdomain'),
+                'name' => __('Main gt profile color', 'gold-train'),
                 'slug' => 'main-profile',
                 'color' => '#bd9869'
             ],
             [
-                'name' => __('Secondary gt profile color', 'txtdomain'),
+                'name' => __('Secondary gt profile color', 'gold-train'),
                 'slug' => 'secondary-profile',
                 'color' => '#846c54'
             ],
             [
-                'name' => __('Third gt profile color', 'txtdomain'),
+                'name' => __('Third gt profile color', 'gold-train'),
                 'slug' => 'third-profile',
                 'color' => '#7c6c54'
             ],
             [
-                'name' => __('Fourth gt profile color', 'txtdomain'),
+                'name' => __('Fourth gt profile color', 'gold-train'),
                 'slug' => 'fourth-profile',
                 'color' => '#040404'
             ],
             [
-                'name' => __('Fifth gt profile color', 'txtdomain'),
+                'name' => __('Fifth gt profile color', 'gold-train'),
                 'slug' => 'fifth-profile',
                 'color' => '#1b1c1e'
             ],
@@ -106,26 +105,26 @@ class GOLD_TRAIN_THEME {
         add_theme_support('custom-line-height');
         add_theme_support( 'editor-font-sizes', array(
             array(
-                'name' => __( 'extra small', 'platetheme' ),
-                'shortName' => __( 'XS', 'platetheme' ),
+                'name' => __( 'extra small', 'gold-train' ),
+                'shortName' => __( 'XS', 'gold-train' ),
                 'size' => 8,
                 'slug' => 'small'
             ),
             array(
-                'name' => __( 'regular', 'platetheme' ),
-                'shortName' => __( 'M', 'platetheme' ),
+                'name' => __( 'regular', 'gold-train' ),
+                'shortName' => __( 'M', 'gold-train' ),
                 'size' => 16,
                 'slug' => 'regular'
             ),
             array(
-                'name' => __( 'large', 'platetheme' ),
-                'shortName' => __( 'L', 'platetheme' ),
+                'name' => __( 'large', 'gold-train' ),
+                'shortName' => __( 'L', 'gold-train' ),
                 'size' => 32,
                 'slug' => 'large'
             ),
             array(
-                'name' => __( 'larger', 'platetheme' ),
-                'shortName' => __( 'XL', 'platetheme' ),
+                'name' => __( 'larger', 'gold-train' ),
+                'shortName' => __( 'XL', 'gold-train' ),
                 'size' => 48,
                 'slug' => 'larger'
             )
