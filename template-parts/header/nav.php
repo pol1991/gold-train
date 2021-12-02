@@ -9,7 +9,39 @@ $menu_class= \GOLD_TRAIN_THEME\Inc\Menus::get_instance();
 $header_menu_id = $menu_class->get_menu_id('gold-train-header-menu');
 $header_menus = wp_get_nav_menu_items($header_menu_id);
 ?>
-<div class="w-100 bg-light gt-container">
+
+<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="dropdown" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+    <?php
+    if( function_exists('the_custom_logo') ){
+      the_custom_logo();
+    }
+    
+    ?>  
+    </a>
+        <?php
+        wp_nav_menu( array(
+            'theme_location'    => 'gold-train-header-menu',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
+        ) );
+        ?>
+        <?php get_search_form(); ?>
+    </div>
+
+</nav>
+
+<!-- <div class="w-100 bg-light gt-container">
   <div class="container pt-2 pb-2">
 
       <a class="gt-inline-link" ><?php printf( get_theme_mod('gold_train_brand_name', __( 'Lorem Ipsum', 'gold-train' ) ),); ?></a>
@@ -99,6 +131,6 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
         </form>
       </div>
   </div>
-</nav>
+</nav> -->
 
 

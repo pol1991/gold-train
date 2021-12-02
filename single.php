@@ -23,7 +23,7 @@ get_header(); ?>
   
             // If comments are open or we have at least one comment, load up the comment template.
             ?>
-            <section id="comments" class="m-2 p-4 ">
+            <section id="comments" class="container">
             <?php if ( comments_open() || get_comments_number() ) :
                 comments_template();
             endif; ?>

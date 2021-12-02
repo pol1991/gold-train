@@ -20,20 +20,21 @@ get_header();
                     <h1 class="page-title">
                         <?php single_post_title(); ?>
                     </h1>
+                    <div class="breadcrumb"><?php get_breadcrumb(); ?></div>
                 </header>
             <?php
             }
             ?>
 
 
-            <div class="row">
+            <div class="row mt-4 mb-4">
                 <?php
                 $index = 0;
                 $no_of_columns = 2;
                 while (have_posts()) : the_post();
                     // if (0 === $index % $no_of_columns) {
                 ?>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <!-- <?php
                         // }
                         ?> -->
