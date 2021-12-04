@@ -39,7 +39,7 @@ $wp_customize->add_panel( 'gold_train_theme_options',
 ]
 );
 
-// Text Options Section Inside Theme
+// -------- ABOUT BRAND
 $wp_customize->add_section( 'gold_train_text_options', 
     array(
         'title'         => __( 'O Firmie', 'gold-train' ),
@@ -47,6 +47,7 @@ $wp_customize->add_section( 'gold_train_text_options',
         'panel'         => 'gold_train_theme_options'
     ) 
 );
+
 
 // BRAND NAME
 
@@ -121,6 +122,62 @@ $wp_customize->add_control( 'gold_train_email_address',
         'input_attrs' => array(
             'placeholder' => __( 'email@twojafirma.pl' ),
           ),
+    ) 
+);
+
+// ---------- SOCIAL MEDIA -----------
+
+$wp_customize->add_section( 'gold_train_socials_options', 
+    array(
+        'title'         => __( 'Social Media', 'gold-train' ),
+        'priority'      => 1,
+        'panel'         => 'gold_train_theme_options'
+    ) 
+);
+
+// Facebook
+
+// Setting for Brand name.
+$wp_customize->add_setting( 'gold_train_facebook_link',
+    array(
+        'capability' => 'edit_theme_options',
+        'default'           => __( 'https://facebook.com/', 'gold-train' ),
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport'         => 'refresh',
+    )
+);
+
+// Control for Brand name.
+$wp_customize->add_control( 'gold_train_facebook_link', 
+    array(
+        'type'        => 'text',
+        'priority'    => 10,
+        'section'     => 'gold_train_socials_options',
+        'label'       => 'Facebook',
+        'description' => 'Tutaj wrzuć link do swojego konta Facebook',
+    ) 
+);
+
+// Youtube
+
+// Setting 
+$wp_customize->add_setting( 'gold_train_youtube_link',
+    array(
+        'capability' => 'edit_theme_options',
+        'default'           => __( 'https://youtube.com/', 'gold-train' ),
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport'         => 'refresh',
+    )
+);
+
+// Control 
+$wp_customize->add_control( 'gold_train_youtube_link', 
+    array(
+        'type'        => 'text',
+        'priority'    => 10,
+        'section'     => 'gold_train_socials_options',
+        'label'       => 'Youtube',
+        'description' => 'Tutaj wrzuć link do swojego konta Youtube',
     ) 
 );
 

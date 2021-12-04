@@ -9,7 +9,8 @@ $menu_class= \GOLD_TRAIN_THEME\Inc\Menus::get_instance();
 $header_menu_id = $menu_class->get_menu_id('gold-train-header-menu');
 $header_menus = wp_get_nav_menu_items($header_menu_id);
 ?>
-
+<section>
+  <div class="row">
 <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -132,5 +133,6 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
       </div>
   </div>
 </nav> -->
-
+  </div>
+</section>
 

@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' );  ?>" />
+
     <?php wp_head(); ?>
 
 </head>
@@ -26,13 +27,16 @@ if( function_exists('wp_body_open') ){
 
 <div id="page" class="site">
 <header id="master-header" class="site-header" role="banner">
+    <?php get_template_part('template-parts/header/info-bar'); ?>
     <?php get_template_part('template-parts/header/nav'); ?>
 </header>
-<?php if ( is_active_sidebar( 'header_widgets_1' ) ) : ?>
-	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-		<?php dynamic_sidebar( 'header_widgets_1' ); ?>
-	</div><!-- #primary-sidebar -->
-<?php endif; ?>
+<section class="w-100">
+    <div class="container">
+        <div class="row">
+            <?php get_template_part('template-parts/header/header-widget'); ?>
+        </div>
+    </div>  
+</section>
 <div id="content" class="site-content">
 
 </div>
