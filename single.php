@@ -29,15 +29,7 @@ get_header(); ?>
             endif; ?>
             </section> <?php
             // Previous/next post navigation.
-            the_post_navigation( array(
-                'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'gold-train' ) . '</span> ' .
-                    '<span class="screen-reader-text">' . __( 'Next post:', 'gold-train' ) . '</span> ' .
-                    '<span class="post-title">%title</span>',
-                'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'gold-train' ) . '</span> ' .
-                    '<span class="screen-reader-text">' . __( 'Previous post:', 'gold-train' ) . '</span> ' .
-                    '<span class="post-title">%title</span>',
-            ) );
-  
+            
         // End the loop.
         endwhile;
     endif;

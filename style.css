@@ -19,6 +19,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Hamburger */
 /* Hamburger end */
 
+.post-container{
+
+}
+
+.post-container:hover{
+	 box-shadow: 5px 5px 5px rgba(52, 58, 64, 0.5);
+}
+
 .read-more-btn::before{
 	content:'WIĘCEJ';
 	display:none;

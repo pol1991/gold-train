@@ -9,6 +9,19 @@
 <header class="d-flex justify-content-start align-items-start mt-2 mb-2 flex-column w-100">
 <h1><?php the_title(); ?></h1>
 <div class="breadcrumb w-100"><?php get_breadcrumb(); ?></div>
+<div class="d-flex justify-content-start align-items-start mt-2 mb-2 flex-column w-100">
+<?php
+the_post_navigation( array(
+    'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'gold-train' ) . '</span> ' .
+        '<span class="screen-reader-text">' . __( 'Next post:', 'gold-train' ) . '</span> ' .
+        '<span class="post-title">%title</span>',
+    'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'gold-train' ) . '</span> ' .
+        '<span class="screen-reader-text">' . __( 'Previous post:', 'gold-train' ) . '</span> ' .
+        '<span class="post-title">%title</span>',
+) );
+
+?>
+</div>
 </header>
 <section class="d-flex justify-content-center align-items-center">
 <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid w-50 ', 'title' => 'Feature image']); ?>

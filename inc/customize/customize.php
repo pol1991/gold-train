@@ -181,4 +181,62 @@ $wp_customize->add_control( 'gold_train_youtube_link',
     ) 
 );
 
+// ---------- SOCIAL MEDIA -----------
+
+$wp_customize->add_section( 'gold_train_footer-options', 
+    array(
+        'title'         => __( 'Stopka', 'gold-train' ),
+        'priority'      => 1,
+        'panel'         => 'gold_train_theme_options'
+    ) 
+);
+
+
+$wp_customize->add_setting( 'gold_train_footer_image', array(
+    'capability' => 'edit_theme_options',
+    'sanitize_callback' => 'sanitize_text_field',
+    'validate_callback' => 'gold_train_validate_image',
+    'transport'         => 'refresh'
+  ) );
+  
+  $wp_customize->add_control(
+    new WP_Customize_Media_Control( $wp_customize, 'gold_train_footer_image', array(
+      'label' => 'Logo w stopce',
+      'section' => 'gold_train_footer-options', // Add a default or your own section
+      'width' => 60,
+      'height' => 60,
+      'mime_type' => 'image',
+  )	)	);
+  
+  function gold_train_validate_image( $validity, $value ) {
+  
+    // Get the url of the image
+    $image = wp_get_attachment_image_src( $value )[0];
+  
+    /*
+    * Array of valid image file types.
+    *
+    * The array includes image mime types that are included in wp_get_mime_types()
+    */
+    $mimes = array(
+        'jpg|jpeg|jpe' => 'image/jpeg',
+        'gif'          => 'image/gif',
+        'png'          => 'image/png',
+        'bmp'          => 'image/bmp',
+        'tif|tiff'     => 'image/tiff',
+        'ico'          => 'image/x-icon'
+    );
+    // Return an array with file extension and mime_type.
+    $file = wp_check_filetype( $image, $mimes );
+    
+    if( !$value ) {
+      // If no image has been chosen, instruct user to choose an image
+      $validity->add( 'required', __( 'Please choose an image' ) );
+    } elseif ( !$file['ext'] ) {
+      // If a valid image file extension is not found, instruct user to choose appropriate image
+      $validity->add( 'not_valid', __( 'Please choose a valid image type' ) );
+    }
+    return $validity;
+  }
+
 }
