@@ -19,6 +19,7 @@ if(!defined('GOLD_TRAIN_DIR_URI')){
 require_once GOLD_TRAIN_DIR_PATH . '/inc/helpers/autoloader.php';
 require_once ( GOLD_TRAIN_DIR_PATH . '/inc/customize/customize.php' );
 require_once ( GOLD_TRAIN_DIR_PATH . '/inc/functions/breadcrumbs.php' );
+require_once ( GOLD_TRAIN_DIR_PATH . '/inc/functions/page-exists.php' );
 require_once(GOLD_TRAIN_DIR_PATH  . '/inc/classes/class-wp-bootstrap-navwalker.php');
 
 function gold_train_get_theme_instance(){
