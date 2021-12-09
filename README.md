@@ -1,3 +1,3 @@
 # WordPress Theme - Gold Train 
 
-Simple blogging template
+Simple and customizable template
