@@ -24,6 +24,8 @@ class Widget{
         //actions and filters
         add_action( 'widgets_init', [$this,'header_widgets_init'] );
         add_action( 'widgets_init', [$this,'footer_widgets_init'] );
+		add_action( 'widgets_init', [$this,'footer_content_widgets_init'] );
+		add_action( 'widgets_init', [$this,'post_widgets_init'] );
     }
 
 
@@ -52,6 +54,33 @@ public function footer_widgets_init() {
 	) );
 
 }
+
+public function footer_content_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Content Widgets',
+		'id'            => 'footer_content_widgets_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+
+public function post_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Post Sidebar',
+		'id'            => 'post_sidebar',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+
 
 }
 

@@ -8,7 +8,7 @@
 get_header();
 ?>
 
-<div id="primary" class="content-area mt-5">
+<div id="primary" class="content-area mt-5 mb-5">
     <main id="main" class="site-main" role="main">
         <div class="container">
         <header class="mt-4 mb-1">

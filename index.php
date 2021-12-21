@@ -27,7 +27,7 @@ get_header();
             ?>
 
 
-            <div class="row mt-4 mb-4">
+            <div class="row mt-4 mb-4 w-100">
                 <?php
                 $index = 0;
                 $no_of_columns = 2;

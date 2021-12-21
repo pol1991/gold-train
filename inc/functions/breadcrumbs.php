@@ -9,7 +9,7 @@ function get_breadcrumb() {
     if (is_category() || is_single()) {
         if(the_slug_exists('blog')){
             echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-            echo '<a class="text-decoration-none text-black" href="'.get_the_title(33).'" rel="nofollow">'.get_the_title(33).'</a>';
+            echo '<a class="text-decoration-none text-black" href="'. get_site_url().'/blog'.'" rel="nofollow">Blog</a>';
         }
         echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
         the_category(' &bull; ');

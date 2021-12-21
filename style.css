@@ -18,6 +18,28 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* Hamburger */
 /* Hamburger end */
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+
+.entry-meta{
+	font-size: 12px;
+}
+
+.entry-meta-post{
+	font-size: initial;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+  }
+
+:focus-visible{
+	outline:none;
+}
+
 .social-icon{
 	cursor: pointer;
 }

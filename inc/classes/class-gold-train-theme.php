@@ -30,6 +30,8 @@ class GOLD_TRAIN_THEME {
         //actions and filters
 
         add_action('after_setup_theme',[$this,'setup_theme']);
+        // Register the three useful image sizes for use in Add Media modal
+// add_filter( 'image_size_names_choose', [$this,'wpshout_custom_sizes'] );
 
     }
 
@@ -41,8 +43,8 @@ class GOLD_TRAIN_THEME {
         }
 
         $logo_defaults = array(
-            'height'               => 100,
-            'width'                => 400,
+            'height'               => 64,
+            'width'                => 64,
             'flex-height'          => true,
             'flex-width'           => true,
             'header-text'          => array( 'site-title', 'site-description' ),
@@ -65,6 +67,14 @@ class GOLD_TRAIN_THEME {
         add_theme_support('custom-background',$background_defaults);
         add_theme_support('custom-logo',$logo_defaults);
         add_theme_support('post-thumbnails');
+        //custom img sizes
+            add_image_size( 'extra-small', 32, 32 ); 
+            function wpshout_custom_sizes( $sizes ) {
+                return array_merge( $sizes, array(
+                    'extra-small' => __( 'Extra Small' ),
+                ) );
+            }
+        //
         add_theme_support( 'post-formats', $post_formats );
         add_theme_support('customize-selective-theme-widgets');
         add_theme_support('automatic-feed-links');
