@@ -26,6 +26,7 @@ class Widget{
         add_action( 'widgets_init', [$this,'footer_widgets_init'] );
 		add_action( 'widgets_init', [$this,'footer_content_widgets_init'] );
 		add_action( 'widgets_init', [$this,'post_widgets_init'] );
+		add_action( 'widgets_init', [$this,'front_widgets_init'] );
     }
 
 
@@ -73,6 +74,19 @@ public function post_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Post Sidebar',
 		'id'            => 'post_sidebar',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+
+public function front_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Front page widgets',
+		'id'            => 'front_page',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="rounded">',

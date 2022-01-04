@@ -21,6 +21,7 @@
             the_post_thumbnail('medium', ['class' => 'img-fluid ', 'title' => 'Feature image']);
         else :
             echo '<img src="' . GOLD_TRAIN_DIR_PATH . '/screenshot.png' . '" ' . 'width="300" class="img-fluid" alt="Feature image"' . '>';
+            
         endif;
         ?>
     </div>
