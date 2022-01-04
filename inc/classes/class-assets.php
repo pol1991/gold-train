@@ -32,7 +32,7 @@ class Assets{
         wp_register_style('bootstrap-min', GOLD_TRAIN_DIR_URI.'/assets/src/bootstrap/css/bootstrap.min.css', [] , false, 'all');
         wp_register_style('bootstrap', GOLD_TRAIN_DIR_URI.'/assets/src/bootstrap/css/bootstrap.css', [] , false, 'all');
         wp_register_style('fontawesome', GOLD_TRAIN_DIR_URI.'/assets/src/fontawesome/css/all.css', [] , false, 'all');
-        wp_register_style('theme-variables', GOLD_TRAIN_DIR_URI.'/assets/css/theme-variables.css', [], filemtime( GOLD_TRAIN_DIR_PATH.'/assets/css/theme-variables.css'), 'all');
+        wp_register_style('theme-variables', GOLD_TRAIN_DIR_URI.'/assets/src/css/theme-variables.css', [], filemtime( GOLD_TRAIN_DIR_PATH.'/assets/src/css/theme-variables.css'), 'all');
         wp_register_style('style', get_stylesheet_uri(), ['theme-variables'], filemtime( GOLD_TRAIN_DIR_PATH.'/style.css' ), 'all' );
 
             /** Enqueue Styles */
@@ -47,9 +47,9 @@ class Assets{
     public function register_scripts() {
 
         /** Register Scripts */
-        wp_register_script('main', GOLD_TRAIN_DIR_URI.'/assets/js/main.js', [], filemtime( GOLD_TRAIN_DIR_PATH.'/assets/js/main.js' ),true );
-        wp_register_script('sticky', GOLD_TRAIN_DIR_URI.'/assets/js/sticky.js', [], filemtime( GOLD_TRAIN_DIR_PATH.'/assets/js/sticky.js' ),true );
-        wp_register_script('hamburger', GOLD_TRAIN_DIR_URI.'/assets/js/hamburger.js', ['jquery'], filemtime( GOLD_TRAIN_DIR_PATH.'/assets/js/hamburger.js' ),true );
+        wp_register_script('main', GOLD_TRAIN_DIR_URI.'/assets/js/main.js', [], filemtime( GOLD_TRAIN_DIR_PATH.'/assets/src/js/main.js' ),true );
+        wp_register_script('sticky', GOLD_TRAIN_DIR_URI.'/assets/js/sticky.js', [], filemtime( GOLD_TRAIN_DIR_PATH.'/assets/src/js/sticky.js' ),true );
+        wp_register_script('hamburger', GOLD_TRAIN_DIR_URI.'/assets/src/js/hamburger.js', ['jquery'], filemtime( GOLD_TRAIN_DIR_PATH.'/assets/src/js/hamburger.js' ),true );
         wp_register_script('bootstrap', GOLD_TRAIN_DIR_URI.'/assets/src/bootstrap/js/bootstrap.js', ['jquery'] , false, false);
         wp_register_script('bootstrap-min', GOLD_TRAIN_DIR_URI.'/assets/src/bootstrap/js/bootstrap.min.js', ['jquery'] , false, false);
         wp_register_script('fontawesome', GOLD_TRAIN_DIR_URI.'/assets/src/fontawesome/js/all.js', [] , false, false);

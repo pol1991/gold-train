@@ -5,11 +5,11 @@
  * @authorURL www.codexworld.com
  */
 function get_breadcrumb() {
-    echo '<a class="text-decoration-none text-black" href="'.home_url().'" rel="nofollow"><i class="fas fa-home"></i></a>';
+    echo '<a class="text-decoration-none " href="'.home_url().'" rel="nofollow"><i class="fas fa-home"></i></a>';
     if (is_category() || is_single()) {
         if(the_slug_exists('blog')){
             echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-            echo '<a class="text-decoration-none text-black" href="'. get_site_url().'/blog'.'" rel="nofollow">Blog</a>';
+            echo '<a class="text-decoration-none " href="'. get_site_url().'/blog'.'" rel="nofollow">Blog</a>';
         }
         echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
         the_category(' &bull; ');

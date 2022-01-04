@@ -30,7 +30,7 @@ if( function_exists('wp_body_open') ){
  ?>
 
 <div id="page" class="site">
-<header id="master-header" class="site-header  bg-light pt-4 pt-lg-0 pt-md-0" role="banner">
+<header id="master-header" class="site-header  bg-gt-dark pt-4 pt-lg-0 pt-md-0" role="banner">
     <?php get_template_part('template-parts/header/info-bar'); ?>
     <?php get_template_part('template-parts/header/nav'); ?>
 </header>

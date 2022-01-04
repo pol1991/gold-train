@@ -13,7 +13,7 @@
         </div>
     </div>
 </section>
-<footer class="footer-container w-100">
+<footer class="footer-container w-100 bg-gt-dark">
     <section class="w-100">
         <div class="container">
             <div class="row">
@@ -28,7 +28,7 @@
                 <div class="container">
 
                     <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center pt-4 pb-4">
-                        <div class=" pl-lg-0 col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-center">
+                        <div class=" pl-lg-0 col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-center text-white">
                             <?php
                             if (get_theme_mod('gold_train_footer_image') > 0) :
                                 echo wp_get_attachment_image(get_theme_mod('gold_train_footer_image'), 'extra-small');  ?>

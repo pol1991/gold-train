@@ -9,8 +9,11 @@
 <div class="container mt-4 mb-4 ml-2 mr-2 p-3 border border-dark rounded post-container">
     <h3><?php the_title(); ?></h3>
     <section class="entry-meta">
-        <span class=""><i class="far fa-calendar-alt"></i> : <?php echo esc_attr(get_the_date()); ?></span>
-        <span class=""><i class="far fa-user"></i> : <?php echo esc_attr(get_the_author()); ?></span>
+        <div class="d-flex flex-row ">
+            
+        <span  class="mx-2"><i class="far fa-calendar-alt"></i> : <?php echo esc_attr(get_the_date()); ?></span>
+        <span class="mx-2"><i class="far fa-user"></i> : <?php echo esc_attr(get_the_author()); ?></span>
+        </div>
     </section>
     <div class="d-flex justify-content-center mt-2 mb-2">
         <?php

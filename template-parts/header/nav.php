@@ -1,4 +1,4 @@
-<section>
+<section class="pb-lg-2">
   <div class="row">
     <div class="col-12">
       <div class="container d-flex flex-column flex-lg-row">
@@ -10,7 +10,7 @@
             }
             ?>
           </div>
-          <nav class="justify-content-center navbar navbar-expand-md navbar-light bg-light" role="navigation">
+          <nav class="justify-content-center navbar navbar-expand-md text-white text-decoration-none" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'gold-train'); ?>">
               <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
               'container'         => 'div',
               'container_class'   => 'collapse navbar-collapse',
               'container_id'      => 'bs-example-navbar-collapse-1',
-              'menu_class'        => 'nav navbar-nav',
+              'menu_class'        => 'nav navbar-nav text-white',
               'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
               'walker'            => new WP_Bootstrap_Navwalker(),
             ));
