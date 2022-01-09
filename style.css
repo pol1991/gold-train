@@ -255,6 +255,10 @@ li.current-menu-item a{
     background-color: #040404;
 }
 
+.latest-posts-widget{
+	font-size: calc(1em * 1.2);
+}
+
 /* Gutenberg*/
 
 .wp-block-cover-image.alignfull .wp-block-cover__inner-container, 
