@@ -41,6 +41,7 @@ html, body {
 
 body{
 	font-family: 'gilroy-light';
+
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -276,6 +277,10 @@ button:focus{
 
 .min-height{
 	min-height: 68vh;
+}
+
+.min-height-blog{
+	min-height: 63vh;
 }
 
 /* Gutenberg*/

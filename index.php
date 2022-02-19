@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<div id="primary" class="site-main mt-5" role="main">
+<div id="primary" class="site-main mt-5 min-height-blog" role="main">
     <?php
 
     if (have_posts()) {
