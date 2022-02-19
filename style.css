@@ -34,6 +34,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Hamburger end */
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
 	font-family: 'gilroy-light';
 }
@@ -259,7 +264,19 @@ li.current-menu-item a{
 	font-size: calc(1em * 1.2);
 }
 
+button:focus{
+	outline: none;
+}
+
+.wpcf7{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
 /* Gutenberg*/
+
+
 
 .wp-block-cover-image.alignfull .wp-block-cover__inner-container, 
 .wp-block-cover.alignfull .wp-block-cover__inner-container {
