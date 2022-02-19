@@ -274,6 +274,10 @@ button:focus{
 	align-items: center;
 }
 
+.min-height{
+	min-height: 68vh;
+}
+
 /* Gutenberg*/
 
 
