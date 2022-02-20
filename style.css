@@ -310,3 +310,42 @@ button:focus{
 	max-width: 1200px;
 	padding: 0 20px; */
 }
+
+/* Social Share */
+
+.gk-social-buttons a {
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 4px;
+    overflow: hidden;
+    width: 30px;
+      
+}
+  
+.gk-social-buttons a:hover {
+    background: #ddd;
+    text-decoration: none;
+}
+  
+.gk-social-buttons a:before {
+    color: #fff;
+    font-family: "Font Awesome 5 Brands";
+    content: "\f099";
+    padding: 12px 7px;
+}
+  
+.gk-social-buttons .icon-fb:before {
+    content: "\f39e";
+	padding: 12px 10px;
+}
+  
+.gk-social-buttons .icon-gplus:before {
+    content: "\f0d5";
+}
+  
+.gk-social-buttons a:hover:before {
+    color: #bd9c6c;
+}
