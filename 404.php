@@ -33,7 +33,7 @@ get_header(); ?>
 						</span>
 					</div>
 				</form>
-				<button class="btn btn-dark rounded-pill mt-4 mt-lg-2"><a class="text-white" href="<?php echo get_home_url(); ?>">Strona główna</a></button>
+				<button class="btn gt-btn-dark rounded-pill mt-4 mt-lg-2"><a class="text-white" href="<?php echo get_home_url(); ?>">Strona główna</a></button>
 			</div><!-- .page-content -->
 		</div><!-- .page-wrapper -->
 

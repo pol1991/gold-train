@@ -12,15 +12,15 @@
         <div class="d-flex flex-row ">
             
         <span  class="mx-2"><i class="far fa-calendar-alt"></i> : <?php echo esc_attr(get_the_date()); ?></span>
-        <span class="mx-2"><i class="far fa-user"></i> : <?php echo esc_attr(get_the_author()); ?></span>
+        <span class="mx-2"><i class="far fa-user"></i> : <?php echo esc_attr( the_author_posts_link()); ?></span>
         </div>
     </section>
     <div class="d-flex justify-content-center mt-2 mb-2">
         <?php
         if (has_post_thumbnail()) :
-            the_post_thumbnail('medium', ['class' => 'img-fluid ', 'title' => 'Feature image']);
+            the_post_thumbnail('medium', ['class' => 'img-fluid ', 'title' => 'Feature image', 'loading' => 'lazy']);
         else :
-            echo '<img src="' . GOLD_TRAIN_DIR_PATH . '/screenshot.png' . '" ' . 'width="300" class="img-fluid" alt="Feature image"' . '>';
+            echo '<img src="' . get_template_directory_uri() . '/screenshot.png' . '" ' . 'width="300" class="img-fluid" alt="Feature image" loading="lazy"' . '>';
             
         endif;
         ?>

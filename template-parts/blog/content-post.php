@@ -14,13 +14,13 @@
         <div class="d-flex flex-row ">
             
         <span  class="mx-2 "><i class="far fa-calendar-alt text-gt-highlight"></i> : <?php echo esc_attr(get_the_date()); ?></span>
-        <span class="mx-2 "><i class="far fa-user text-gt-highlight"></i> : <?php echo esc_attr(get_the_author()); ?></span>
+        <span class="mx-2 "><i class="far fa-user text-gt-highlight"></i> : <?php echo esc_attr(the_author_posts_link()); ?></span>
         </div>
     </section>
  
     </header>
     <section class="d-flex justify-content-center align-items-center">
-        <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid w-50 ', 'title' => 'Feature image']); ?>
+        <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid w-50 ', 'title' => 'Feature image', 'loading'=>'lazy']); ?>
     </section>
     <section id="" class="mt-4 d-flex flex-column justify-content-center align-items-center">
         <p> <?php the_content(); ?></p>

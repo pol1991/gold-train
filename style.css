@@ -283,6 +283,22 @@ button:focus{
 	min-height: 63vh;
 }
 
+.gt-btn-dark {
+    color: #fff;
+    background-color: #040404;
+    border-color: #040404;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in 0.2s, border-color 0.3s ease-in 0.2s;
+}
+
+.gt-btn-dark:hover {
+    color: #fff;
+    background-color: #bd9c6c;
+    border-color: #bd9c6c;
+}
+
+
+
 /* Gutenberg*/
 
 
