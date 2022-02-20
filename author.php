@@ -20,9 +20,9 @@
     <section class="my-4">
         <h4><?php _e('Social Media:','gold-train'); ?></h4>
         <div id="author-social-icons" class="d-flex flex-row">
-        <a class="mx-1" href="https://www.facebook.com/<?php echo get_the_author_meta('twitter') ?>"><i class="fab fa-twitter"></i></a>
-        <a class="mx-1" href="https://www.facebook.com/<?php echo get_the_author_meta('facebook') ?>"><i class="fab fa-facebook social-icon"></i></a>
-        <a class="mx-1" href="https://www.facebook.com/<?php echo get_the_author_meta('youtube') ?>"><i class="fab fa-youtube social-icon"></i></a>
+        <a class="mx-1" href="https://www.facebook.com/<?php echo get_the_author_meta('twitter') ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="mx-1" href="https://www.facebook.com/<?php echo get_the_author_meta('facebook') ?>" target="_blank"><i class="fab fa-facebook social-icon"></i></a>
+        <a class="mx-1" href="https://www.youtube.com/channel/<?php echo get_the_author_meta('youtube') ?>" target="_blank"><i class="fab fa-youtube social-icon"></i></a>
         </div>
     </section>
     <section class="my-4 ">
