@@ -30,6 +30,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	font-weight:bold;
   }
 
+  :root{
+
+  }
+
 /* Hamburger */
 /* Hamburger end */
 
@@ -297,6 +301,17 @@ button:focus{
     border-color: #bd9c6c;
 }
 
+.gt-text-dark{
+	color: #040404;
+	
+}
+
+.display-1, .display-2, .display-3, .display-4{
+	color: #040404;
+}
+h1,h2,h3,h4,h5,h6{
+	color: #040404;
+}
 
 
 /* Gutenberg*/
@@ -313,8 +328,10 @@ button:focus{
 
 /* Social Share */
 
+
+
 .gk-social-buttons a {
-    background: #ccc;
+    background: #846c54;
     border-radius: 50%;
     display: inline-block;
     height: 30px;
@@ -326,7 +343,7 @@ button:focus{
 }
   
 .gk-social-buttons a:hover {
-    background: #ddd;
+    background: #bd9c6c;
     text-decoration: none;
 }
   
@@ -342,10 +359,11 @@ button:focus{
 	padding: 12px 10px;
 }
   
-.gk-social-buttons .icon-gplus:before {
-    content: "\f0d5";
+.gk-social-buttons .icon-mail:before {
+    content: "\f0e0";
+	font-family: 'Font Awesome 5 Free';
 }
   
 .gk-social-buttons a:hover:before {
-    color: #bd9c6c;
+    color: #040404;
 }

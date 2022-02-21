@@ -14,16 +14,20 @@
         </div>
         <div class="mx-2 justify-self-start">
             <h2 class="my-2"><?php echo $curauth->nickname; ?></h2>
-            <p><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?></p>
+            <h3><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?></h3>
         </div>
     </section>
     <section class="my-4">
         <h4><?php _e('Social Media:','gold-train'); ?></h4>
         <div id="author-social-icons" class="d-flex flex-row">
-        <a class="mx-1" href="https://www.facebook.com/<?php echo get_the_author_meta('twitter') ?>" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a class="mx-1" href="https://www.facebook.com/<?php echo get_the_author_meta('facebook') ?>" target="_blank"><i class="fab fa-facebook social-icon"></i></a>
-        <a class="mx-1" href="https://www.youtube.com/channel/<?php echo get_the_author_meta('youtube') ?>" target="_blank"><i class="fab fa-youtube social-icon"></i></a>
+        <a class="mx-1" href="https://www.facebook.com/<?php echo get_the_author_meta('twitter') ?>" target="_blank"><i class="fab fa-twitter social-icon fa-lg"></i></a>
+        <a class="mx-1" href="https://www.facebook.com/<?php echo get_the_author_meta('facebook') ?>" target="_blank"><i class="fab fa-facebook social-icon fa-lg"></i></a>
+        <a class="mx-1" href="https://www.youtube.com/channel/<?php echo get_the_author_meta('youtube') ?>" target="_blank"><i class="fab fa-youtube social-icon fa-lg"></i></a>
         </div>
+    </section>
+    <section class="my-4">
+    <h4><?php _e('Strona internetowa:','gold-train'); ?></h4>
+    <a href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a>
     </section>
     <section class="my-4 ">
         <h3><?php _e('Bio:', 'gold-train'); ?></h3>
