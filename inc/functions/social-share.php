@@ -11,7 +11,7 @@ function gk_social_buttons($content)
     $permalink = get_permalink($post->ID);
     $title = get_the_title();
     if (!is_feed() && !is_home() && !is_page()) {
-        $content = $content . '<div class="gk-social-buttons w-100 text-center text-lg-right">
+        $content = $content . '<div class="gk-social-buttons w-100 text-center text-lg-right pt-3">
 
         <a class="icon-mail" href="mailto:?subject=' . $title . '&body=Check out this site ' . $permalink . '" 
         onclick="window.open(this.href, \'google-plus-share\', \'width=490,height=530\');return false;">

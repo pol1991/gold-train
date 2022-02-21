@@ -362,6 +362,7 @@ h1,h2,h3,h4,h5,h6{
 .gk-social-buttons .icon-mail:before {
     content: "\f0e0";
 	font-family: 'Font Awesome 5 Free';
+	padding: 12px -1px;
 }
   
 .gk-social-buttons a:hover:before {

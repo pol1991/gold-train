@@ -74,6 +74,12 @@ class GOLD_TRAIN_THEME {
                     'extra-small' => __( 'Extra Small' ),
                 ) );
             }
+            add_image_size( 'baner', 1600, 400, true ); 
+            function wpshout_custom_sizes_baner( $baner_sizes ) {
+                return array_merge( $baner_sizes, array(
+                    'baner' => __( 'Baner' ),
+                ) );
+            }
         //
         add_theme_support( 'post-formats', $post_formats );
         add_theme_support('customize-selective-theme-widgets');

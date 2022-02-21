@@ -27,6 +27,7 @@ require_once ( GOLD_TRAIN_DIR_PATH . '/inc/functions/gt-required-plugins.php' );
 require_once ( GOLD_TRAIN_DIR_PATH . '/inc/functions/social-share.php' );
 require_once ( GOLD_TRAIN_DIR_PATH . '/inc/functions/user-info.php' );
 
+
 function gold_train_get_theme_instance(){
     \GOLD_TRAIN_THEME\Inc\GOLD_TRAIN_THEME::get_instance();
 }
